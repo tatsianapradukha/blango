@@ -12,8 +12,9 @@
         {{ post.content|safe }}
     </div>
 {% endrow %}
+{% include "blog/post-comments.html" %}
 {% row %}
-    {% col %}
+    {% col %}    
         {% recent_posts post %}
     {% endcol %}
 {% endrow %}
