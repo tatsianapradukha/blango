@@ -91,6 +91,7 @@ class Dev(Configuration):
         "rest_framework.authtoken", 
         "drf_yasg",
         "django_filters",
+        "versatileimagefield",
     ]
   
     SITE_ID = 1
@@ -159,6 +160,9 @@ class Dev(Configuration):
     INTERNAL_IPS = ["192.168.11.179"]
 
     ROOT_URLCONF = 'blango.urls'
+
+    MEDIA_ROOT = BASE_DIR / "media"
+    MEDIA_URL = "/media/"
 
     TEMPLATES = [
         {
